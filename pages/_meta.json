@@ -1,0 +1,14 @@
+{
+  "index": "Introduction",
+  "units": "Units",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:sorb.hanzala@gmail.com",
+    "newWindow": true
+  }
+}
