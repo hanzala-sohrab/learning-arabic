@@ -1,33 +1,7 @@
 'use client';
 import Select, { ActionMeta, MultiValue } from 'react-select';
 import React, { useRef, useState } from 'react';
-
-enum enArWords {
-  I = 'Ism (اﺳﻢ)',
-  F = 'Fi\'l (ﻓﻌﻞ)',
-  H = 'Harf (حرف)',
-  R = 'Rafa\' (رفع)',
-  N = 'Nasb (نصب)',
-  J = 'Jarr (جر)'
-}
-
-enum enWords {
-  I = 'Ism',
-  F = 'Fi\'l',
-  H = 'Harf',
-  R = 'Rafa\'',
-  N = 'Nasb',
-  J = 'Jarr'
-}
-
-enum arWords {
-  I = 'اﺳﻢ',
-  F = 'ﻓﻌﻞ',
-  H = 'حرف',
-  R = 'رفع',
-  N = 'نصب',
-  J = 'جر'
-}
+import {enArWords} from '@/utils/constants';
 
 interface OptionType {
   value: string;
