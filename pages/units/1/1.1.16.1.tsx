@@ -53,7 +53,6 @@ const Exercise1: React.FC = () => {
 
   const checkAnswers = (event: any) => {
     event.preventDefault();
-    console.log({ answers });
 
     setShowResult(true);
     setAnswerStatus(
@@ -75,6 +74,7 @@ const Exercise1: React.FC = () => {
       })
     );
   };
+
   return (
     <>
       <h4>Exercise #1</h4>
