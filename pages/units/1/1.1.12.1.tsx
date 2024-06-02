@@ -55,7 +55,7 @@ const Exercise1: React.FC = () => {
   const [showAnswers, setShowAnswers] = useState(false);
 
   const handleChange = (e: any, idx: number) => {
-    if (!('value' in e) || !('value' in e.value)) {
+    if (!('value' in e)) {
       return;
     }
 
