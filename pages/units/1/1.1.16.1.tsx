@@ -65,7 +65,7 @@ const Exercise1: React.FC = () => {
         }
         let val = true;
         status.forEach((st, idx) => {
-          const {value} = st;
+          const { value } = st;
           if (!correctStatus.includes(value)) {
             val = false;
             return;
@@ -79,7 +79,7 @@ const Exercise1: React.FC = () => {
     <>
       <h4>Exercise #1</h4>
       <p>For the following words, provide their ({arWords.R}, {arWords.N}, {arWords.J}) and flexibility</p>
-      <table style={{ width: '100%', tableLayout: 'fixed', textAlign: 'left' }}>
+      <table style={{ width: '100%', textAlign: 'left' }} className='nx-table-fixed nx-border-collapse'>
         <thead>
           <tr>
             <th style={{ width: '10%' }}>Word</th>
@@ -250,6 +250,71 @@ const Exercise1: React.FC = () => {
         </tbody>
       </table>
       <button className='nx-text-white nx-font-bold nx-py-2 nx-px-4 nx-rounded nx-border' onClick={checkAnswers}>Check</button>
+      {
+        showResult
+        &&
+        <table style={{ width: '100%', textAlign: 'left' }} className='nx-table-fixed'>
+          <thead>
+            <tr>
+              <th style={{ width: '10%' }}>Word</th>
+              <th>Status</th>
+              <th style={{ width: '30%' }}>Flexibility</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>کِتَابٌ</td>
+              <td>{arWords.R} because of ٌ◌</td>
+              <td>Fully flexible; we can tell easily because it has a tanween</td>
+            </tr>
+            <tr>
+              <td>عِیْسَی</td>
+              <td>{arWords.R}, {arWords.N}, or {arWords.J}</td>
+              <td>Non-flexible</td>
+            </tr>
+            <tr>
+              <td>اَرْثُوْرُ</td>
+              <td>{arWords.R} because of ُ◌</td>
+              <td>Partly flexible; this is a non-Arab name (Arthur)</td>
+            </tr>
+            <tr>
+              <td>اَلرَّحْمنِ</td>
+              <td>{arWords.J} because of ِ◌</td>
+              <td>Fully flexible: not only does it have an ال but the ◌ِ gives it away that it&apos;s fully flexible</td>
+            </tr>
+            <tr>
+              <td>ھَارُوْنَ</td>
+              <td>ﻧﺼﺐ or ﺟﺮ because of the  َ◌</td>
+              <td>Partly flexible; this is a non-Arab name</td>
+            </tr>
+            <tr>
+              <td>اِبْرَاھِیْمِ</td>
+              <td>Trick question! This doesn&apos;t exist because Ibrahim is a partly flexible (non-Arab) name, and thus can never take a <i>kasra</i></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>مُخْلِصِیْنَ</td>
+              <td>ﻧﺼﺐ or ﺟﺮ because of the یْنِ ending combination</td>
+              <td>Fully flexible; we can tell easily because it isn&apos;t light</td>
+            </tr>
+            <tr>
+              <td>آدَمُ</td>
+              <td>ﺭﻓﻊ because of the  ُ◌</td>
+              <td>Partly flexible; this is a non-Arab name</td>
+            </tr>
+            <tr>
+              <td>صَادِقَانِ</td>
+              <td>ﺭﻓﻊ because it has the انِ ending combination</td>
+              <td>Fully flexible; we can tell because it isn&apos;t light (and it has a ◌ِ at the end too)</td>
+            </tr>
+            <tr>
+              <td>رَبٌّ</td>
+              <td>ﺭﻓﻊ because it has  ٌ◌</td>
+              <td>Fully flexible; it has a tanween</td>
+            </tr>
+          </tbody>
+        </table>
+      }
     </>
   )
 }
