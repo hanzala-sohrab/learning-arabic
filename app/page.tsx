@@ -15,7 +15,7 @@ export default function Home() {
         }}
       >
         {/* Decorative elements */}
-        <div
+        {/*<div
           style={{
             position: "absolute",
             top: "-20px",
@@ -46,9 +46,10 @@ export default function Home() {
           }}
         >
           العربية
-        </div>
+        </div>*/}
 
         <div className="animate-fade-in-up">
+          <div style={{ fontFamily: "var(--font-arabic)", marginBottom: "1rem", fontSize: '52px' }}>ٱلسَّلَامُ عَلَيْكُمْ</div>
           <div
             style={{
               fontSize: "0.8rem",

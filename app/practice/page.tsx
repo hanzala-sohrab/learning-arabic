@@ -34,7 +34,7 @@ function generateQuestions(type: QuizType, count: number): QuizQuestion[] {
         .map((w) => w.english);
       const options = shuffle([word.english, ...others]);
       questions.push({
-        question: `What does "${word.arabic}" mean?`,
+        question: `What does <span style=\"font-family: var(--font-arabic); font-size: 27px;\">${word.arabic}</span> mean?`,
         options,
         correctAnswer: options.indexOf(word.english),
       });

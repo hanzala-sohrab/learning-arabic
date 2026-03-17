@@ -66,7 +66,7 @@ export default function QuizCard({
             lineHeight: 1.6,
           }}
         >
-          {question}
+          <div dangerouslySetInnerHTML={{__html: question}} />
         </h3>
       </div>
 

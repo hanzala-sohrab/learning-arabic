@@ -361,9 +361,9 @@ export const lessons: Lesson[] = [
       },
     ],
     quiz: [
-      { question: "What does 'شكراً' mean?", options: ["Hello", "Goodbye", "Thank you", "Please"], correctAnswer: 2 },
+      { question: "What does <span style=\"font-family: var(--font-arabic); font-size: 27px;\">شكراً</span> mean?", options: ["Hello", "Goodbye", "Thank you", "Please"], correctAnswer: 2 },
       { question: "How do you say 'Five' in Arabic?", options: ["ثلاثة", "خمسة", "سبعة", "عشرة"], correctAnswer: 1 },
-      { question: "What color is 'أخضر'?", options: ["Red", "Blue", "Yellow", "Green"], correctAnswer: 3 },
+      { question: "What color is <span style=\"font-family: var(--font-arabic); font-size: 27px;\">أخضر</span>?", options: ["Red", "Blue", "Yellow", "Green"], correctAnswer: 3 },
     ],
   },
   {
@@ -404,7 +404,7 @@ export const lessons: Lesson[] = [
     ],
     quiz: [
       { question: "How do you ask 'What is your name?' in Arabic?", options: ["كيف حالك؟", "ما اسمك؟", "أين أنت؟", "كم الثمن؟"], correctAnswer: 1 },
-      { question: "What does 'الحمد لله' literally mean?", options: ["I am fine", "Praise be to God", "God willing", "Thank you"], correctAnswer: 1 },
+      { question: "What does <span style=\"font-family: var(--font-arabic); font-size: 27px;\">الحمد لله</span> literally mean?", options: ["I am fine", "Praise be to God", "God willing", "Thank you"], correctAnswer: 1 },
       { question: "How do you say 'I don't understand' in Arabic?", options: ["أنا بخير", "من فضلك", "لا أفهم", "شكراً"], correctAnswer: 2 },
     ],
   },
